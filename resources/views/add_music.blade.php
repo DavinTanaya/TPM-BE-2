@@ -25,19 +25,19 @@
         @csrf
         <div class="mb-3">
             <label for="exampleInputTitle" class="form-label">Title</label>
-            <input type="text" name="title" class="form-control" id="exampleInputTitle">
+            <input type="text" name="title" class="form-control" id="exampleInputTitle" required>
         </div>
         <div class="mb-3">
             <label for="exampleInputArtist" class="form-label">Artist</label>
-            <input type="text" name="artist" class="form-control" id="exampleInputArtist">
+            <input type="text" name="artist" class="form-control" id="exampleInputArtist" required>
         </div>
         <div class="mb-3">
             <label for="exampleInputYear" class="form-label">Release Year</label>
-            <input type="number" name="year" class="form-control" id="exampleInputYear">
+            <input type="number" name="year" class="form-control" id="exampleInputYear" required>
         </div>  
         <div class="mb-3">
             <label for="exampleInputLink" class="form-label">Link</label>
-            <input type="text" name="link" class="form-control" id="exampleInputLink">
+            <input type="text" name="link" class="form-control" id="exampleInputLink" required>
         </div>     
         <button type="submit" class="btn btn-primary">Add</button>
       </form>

@@ -42,7 +42,8 @@
             <td>{{ $music -> title }}</td>
             <td>{{ $music -> artist }}</td>
             <td>{{ $music -> year }}</td>
-            <td><a href="{{ $music -> link }}" target="_blank">{{ $music -> link }}</a></td>
+            <td><a href="{{ $music -> link }}" target="_blank" rel="noopener noreferrer">
+            Visit Link</a></td>
           </tr>
           @endforeach
         </tbody>
