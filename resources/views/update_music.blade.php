@@ -21,7 +21,7 @@
     </div>
   </nav>
       
-    <form method="POST" action="/post-add-music" enctype="multipart/form-data">
+    <form method="POST" action="/update-music/{{ $music -> id }}" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="exampleInputTitle" class="form-label">Title</label>
@@ -67,9 +67,9 @@
         <div class="mb-3">
             <a class="btn btn-success" href="/add-artist">Add New Artist</a>
         </div>
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary">Update</button>
     </form>
-    
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>

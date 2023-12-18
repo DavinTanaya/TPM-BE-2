@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('music', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('artist');
+            $table->foreignId('artist_id')->constrained();
             $table->integer('year');
             $table->longText('link');
+            $table->string('image_path');
 
             $table->timestamps();
         });
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('musics');
+        //
     }
 };
